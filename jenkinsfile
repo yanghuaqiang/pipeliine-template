@@ -1,6 +1,6 @@
 // define git info
-def gitlab_url = 'http://192.168.1.251/yuejun/openshift-tasks.git'
-def gitlab_credentialsId = 'gitlab-yuejun'
+def gitlab_url = 'http://github.com/garycncf/openshift-tasks.git'
+def gitlab_credentialsId = 'gitlab'
 def gitlab_branch = "release"
 
 // define openshift project name
