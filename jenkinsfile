@@ -80,7 +80,7 @@ stages {
         script {
             openshift.withCluster() {
                 openshift.withProject("${project_name}") {
-                    openshift.newBuild("--name=${service_name}", "--image-stream=openshift/jboss-eap64-openshift", "--binary=true")
+                    openshift.newBuild("--name=${service_name}", "--image-stream=openshift/jboss-eap64-openshift:latest", "--binary=true")
                 }
             }
         }
@@ -99,7 +99,7 @@ stages {
       }
     }
   }
-  stage('Develop APP') {
+  stage('Deploy APP') {
     steps {
         script {
             openshift.withCluster() {
